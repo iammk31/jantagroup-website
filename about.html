@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janta Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="./index.html" id="home">HOME</a></li> <hr>
+                <li><a href="./about.html">About US</a></li><hr>
+                <!-- <li><a href="./index.html#feature" id="feature-link">FEATURES</a></li> <hr>
+                <li><a href="./index.html#courses_janta" id="courses-link">COURSES</a></li> <hr> -->
+                <li><a href="./service.html">SERVICES</a></li><hr>
+                <li><a href="./branch.html">BRANCHES</a></li><hr>
+                <li><a href="./franchise.html">FRANCHISE</a></li><hr>
+                <li><a href="./team.html">TEAM</a></li><hr>
+                <li><a href="./contact.html">CONTACT US</a></li><hr>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="images/menu.png" alt="menuButton" id="menu"> 
+    </div>
+    
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>
+            Empowering the Future with Cutting-edge Robotics Courses 
+        </p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="./images/pic-10.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <p>Janta Technology  is a leading provider of robotics education and training programs. Established in 2017, our company is dedicated to equipping individuals with the knowledge and skills necessary to excel in the field of robotics. With a mission to foster innovation, creativity, and problem-solving abilities, we offer a wide range of comprehensive courses designed for students, professionals, and enthusiasts alike.
+                    <br> <br>
+                    Our curriculum is carefully crafted by a team of experienced robotics experts, ensuring that each course provides a perfect blend of theory and hands-on practical experience. Whether you are a beginner looking to get started in robotics or an advanced learner seeking to expand your knowledge, we have courses to cater to different skill levels and interests.
+                    <br> <br>
+                    At Janta Technology , we understand the importance of staying up-to-date with the latest industry trends. Therefore, our instructors are not only highly knowledgeable but also actively involved in cutting-edge research and industry projects. This ensures that our students receive the most relevant and state-of-the-art training.
+                    <br> <br>
+                    Our course offerings cover a wide range of topics, including introductory robotics, robot programming, automation systems, artificial intelligence in robotics, machine learning, and much more. We provide both in-person and online learning options, allowing students from around the world to access our high-quality educational content.
+                    <br> 
+                    <br> <br></p>
+                <a href="./index.html#courses_janta" class="read-more">Checkout our courses</a>
+            </div>
+
+        </section>
+
+   
+    </div>
+
+         <!-- footer -->
+         <section id="footer">
+            <!-- <div class="title-text">
+                <p>Contect</p>
+                <h1>Visit Office Today</h1>
+            </div> -->
+    
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1><span>Opening hours</span></h1>
+                    <p><i class="fa-sharp fa-regular fa-clock"></i> Monday to Saturday 10am to 6pm</p>
+                    <p><i class="fa-sharp fa-regular fa-clock"></i> Sunday - Closed </p>
+                </div>
+                <div class="footer-right">
+                    <h1><span>Get in touch</span></h1>
+                    <p>I-177 Sukanto Nagar Salt Lake Sector - 4 Kolkata-700098<i class="fa fa fa-solid fa-location-dot"></i></p>
+                    <p>info@jantagroup.org<i class="fa fa-paper-plane" aria-hidden="true"></i></p>
+                    <p>+91 8777687605 <i class="fa fa-solid fa-phone"></i></p>
+                </div>
+            </div>
+            <div class="social-links">
+               <a href="https://www.facebook.com/jantacreative?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+                <a href="https://www.instagram.com/janta_.group/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/jantagroup/jobs/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/abhishekjanta" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                
+            </div>
+            <div class="terms">
+                <a href="https://merchant.razorpay.com/policy/LPhbvPzwPfkjJn/terms"><h4><span>Terms & Conditions <i class="fa-solid fa-arrow-up-right-from-square"></i></span></h4></a>
+            </div>
+        </section>
+
+        <script>
+
+            window.onload = function() {
+              // Your code here
+                    var home = document.getElementById("home");;
+                    var courses = document.getElementById('courses-link');
+                    var feature = document.getElementById('feature-link');
+                    var menuBtn = document.getElementById("menuBtn")
+                    var sideNav = document.getElementById("sideNav")
+                    var menu = document.getElementById("menu")
+            
+                    sideNav.style.right = "-250px"
+                    menuBtn.onclick = function(){
+                        if (sideNav.style.right == "-250px") {
+                            sideNav.style.right = " 0";
+                            menu.src = "images/close.png"
+                        }else {
+                            sideNav.style.right = "-250px"
+                            menu.src = "images/menu.png"
+                        }
+                    }
+            
+                    courses.onclick = function() {
+                if (sideNav.style.right == "0px") {
+                    sideNav.style.right = "-250px";
+                    menu.src = "images/menu.png";
+                }
+            };
+        };
+    
+        document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123) {
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+         return false;
+        }
+    
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+         return false;
+        }      
+     }
+            
+            </script>
+</body>
+</html>
